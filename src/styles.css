@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+.lottoball
+{
+  font-family: "Times New Roman", Times, serif;
+  border: 0px solid #444444;
+  height: 150px;
+  width: 150px;
+  //background: url('assets/whiteBall.png') no-repeat right top;
+  color:#000;
+  padding-left:4px;
+  font-size: 110px;
+  text-align: center;
+}
+
+
+.redball
+{
+  background: url('assets/redBall.png') no-repeat right top;
+}
+
+.whiteball
+{
+  background: url('assets/whiteBall.png') no-repeat right top;
+}
