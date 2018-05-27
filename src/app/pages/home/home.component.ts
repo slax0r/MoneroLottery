@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Book, LotteryDataService} from '../../services/lottery-data.service';
+import {Book, LatestDraw, LotteryDataService} from '../../services/lottery-data.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +8,8 @@ import {Book, LotteryDataService} from '../../services/lottery-data.service';
 })
 export class HomeComponent implements OnInit {
 
-  books: Book[];
+  books: Array<Book>;
+  draw: LatestDraw;
 
   constructor(private lotteryDataService: LotteryDataService) { }
 
@@ -16,8 +17,14 @@ export class HomeComponent implements OnInit {
     this
       .lotteryDataService
       .getBooks()
-      .subscribe((data: Book[]) => {
+      .subscribe((data: Array<Book>) => {
         this.books = data;
+      });
+    this
+      .lotteryDataService
+      .getLatestDraw()
+      .subscribe((data: LatestDraw) => {
+        this.draw = data;
       });
   }
 

@@ -12,6 +12,7 @@ import { FAQComponent } from './pages/faq/faq.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {LotteryDataService} from './services/lottery-data.service';
+import { OddsComponent } from './pages/odds/odds.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {LotteryDataService} from './services/lottery-data.service';
     PlayComponent,
     AboutComponent,
     ContactComponent,
-    FAQComponent
+    FAQComponent,
+    OddsComponent
   ],
   imports: [
     NgbModule.forRoot(),

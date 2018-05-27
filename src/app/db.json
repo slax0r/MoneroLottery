@@ -1,4 +1,9 @@
 {
+  "latestdraw": {
+    "drawdate": "",
+    "drawid": 5,
+    "numbers": [4,12,38,47,60,73]
+  },
   "books": [
     {
       "id": "1",
