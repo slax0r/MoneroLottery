@@ -19,7 +19,7 @@ body {
 {
   background: url('assets/redBall.png') no-repeat center center;
   background-size: 120px 120px;
-  text-shadow: 2px 2px 8px #FF0000;
+  text-shadow: 2px 2px 8px #b06262;
 }
 
 .whiteball
@@ -38,8 +38,11 @@ body {
   color: white;
 }
 
-mastehead {
-  text-align: center;
-  align-content: center;
-  alignment: center;
+.mastehead {
+  height: 150px;
+  margin: 0 auto;
+}
+
+.masthead-img {
+  height: 150px;
 }
