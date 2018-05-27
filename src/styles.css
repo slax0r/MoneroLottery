@@ -28,3 +28,12 @@ body {
   background-size: 150px 150px;
   text-shadow: 2px 2px 8px #FF0000;
 }
+
+.cell-border {
+  border: 1px solid #000000 !important;
+}
+
+.header-row-centered {
+  text-align: center;
+  color: white;
+}
