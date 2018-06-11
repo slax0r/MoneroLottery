@@ -11,8 +11,10 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FAQComponent } from './pages/faq/faq.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import {LotteryDataService} from './services/lottery-data.service';
+import { LotteryDataService } from './services/lottery-data.service';
 import { OddsComponent } from './pages/odds/odds.component';
+import { NgbNumberpickerComponent } from './ngbnumberpicker/ngbnumberpicker.component';
+import { NumberpickerComponent } from './numberpicker/numberpicker.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { OddsComponent } from './pages/odds/odds.component';
     AboutComponent,
     ContactComponent,
     FAQComponent,
-    OddsComponent
+    OddsComponent,
+    NgbNumberpickerComponent,
+    NumberpickerComponent
   ],
   imports: [
     NgbModule.forRoot(),
